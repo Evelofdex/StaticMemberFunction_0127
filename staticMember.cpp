@@ -8,6 +8,11 @@ class Mahasiswa{
 
     void setID();
     void printAll();
+    //membuat constructor mahasiswa
+    Mahasiswa(string pnama) :nama(pnama){
+        setID();
+    }
+
 };
 
 
