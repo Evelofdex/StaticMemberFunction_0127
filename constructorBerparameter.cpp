@@ -1,19 +1,20 @@
 #include <iostream>
-using namespace std;
+#include <string>
+using namespace std; 
 
-int main(){
-    
+class mahasiswa {
+public:
+    mahasiswa(int nim, string nama); //Constructor dengan parameter
+};
+
+// Definisi Constructor dengan parameter
+mahasiswa::mahasiswa(int nim, string nama) {
+    cout << "Constructor dengan parameter Terpanggil" << endl;
+    cout << "NIM: " << nim << endl;
+    cout << "Nama: " << nama << endl;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+int main() {
+    mahasiswa mhs(12345, "Pascal"); // Memanggil Constructor dengan parameter
+    return 0;
+}
