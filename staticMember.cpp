@@ -16,6 +16,10 @@ class Mahasiswa{
 
 int Mahasiswa::nim = 0;
 
+void Mahasiswa::setID(){
+    id = ++nim;
+};
+
 
 int main(){
 
