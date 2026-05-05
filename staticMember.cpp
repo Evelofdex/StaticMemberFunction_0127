@@ -12,8 +12,9 @@ class Mahasiswa{
     Mahasiswa(string pnama) :nama(pnama){
         setID();
     }
-
 };
+
+int Mahasiswa::nim = 0;
 
 
 int main(){
